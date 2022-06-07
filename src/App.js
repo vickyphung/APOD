@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import ApodNav from './components/ApodNav';
+import ApodHome from './ApodHome'
+import Random from "./components/Random";
+import Date from "./components/Date";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (    
+      <div className="AppContainer">
+        <div className="">
+          <ApodNav />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/" element={<ApodHome />} />
+            <Route path="/random" element={<Random />} />
+            <Route path="/date" element={<Date />} />
+          </Routes>
+        </div>
+      </div>
   );
 }
 

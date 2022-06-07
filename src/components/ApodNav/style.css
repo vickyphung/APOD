@@ -1,0 +1,41 @@
+.navContent {
+display: flex;
+flex-direction: column;
+padding: 2rem;
+background-color: rgb(136, 102, 230);
+font-family: Arial, Helvetica, sans-serif;
+border-radius: .2em;
+
+}
+
+.navTitle {
+display: inline-flex;
+justify-content: space-between;
+font-size: 2vw;
+color: white;
+
+}
+
+.navLinks {
+font-size: 2.25vw;
+text-decoration: none;
+border: none;
+
+}
+
+.navLinkItems{
+list-style-type: none;
+display: inline-flex;
+padding: 1.15rem;
+gap: 3rem;
+text-decoration: none;
+color: white;
+border: 1px solid rgb(200, 180, 236);
+margin: 1rem;
+border-radius: .5em;
+background-color: rgb(111, 75, 207)
+}
+
+.navLinkContainer {
+    display: inline-flex;
+}
