@@ -5,11 +5,11 @@ export default function Nav() {
       <nav className="nav">
         <div className="navContent">
           <div className="navTitle">
-          <h1>Astronomy Picture Of the Day</h1>
+          <h1>Astronomy Picture of the Day</h1>
               <div className="navLinks">
                   <li className="navLinkContainer">
                   <CustomLink  to="/" className="navLinkItems">Today</CustomLink>
-                  <CustomLink  to="/date" className="navLinkItems">Pick a Date</CustomLink>
+                  <CustomLink  to="/date" className="navLinkItems">Date</CustomLink>
                   <CustomLink  to="/random" className="navLinkItems">Random</CustomLink>
                   </li>
               </div>
