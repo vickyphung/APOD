@@ -3,9 +3,8 @@ import './style.css'
 export default function Nav() {
   return (
       <nav className="nav">
-        <div className="navContent">
-          <div className="navTitle">
-          <h1>Astronomy Picture of the Day</h1>
+     
+       
               <div className="navLinks">
                   <li className="navLinkContainer">
                   <CustomLink  to="/" className="navLinkItems">Today</CustomLink>
@@ -13,8 +12,10 @@ export default function Nav() {
                   <CustomLink  to="/random" className="navLinkItems">Random</CustomLink>
                   </li>
               </div>
-          </div>
-        </div>
+              <div className="navTitle">Astronomy Picture of the Day</div>
+
+          
+     
       </nav>
   );
 }

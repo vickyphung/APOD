@@ -21,9 +21,9 @@ const ApodDate = (props) => {
     console.log(apodData)
 
     return (
-        <div className="dateContainer">
-            <div className='apodTitle'>{apodData.title}<br></br>
-                <span className='apodDate'>{apodData.date}</span>
+        <div className="pickDateContainer">
+            <div className='apodTitle'><h1>{apodData.title}</h1><br></br>
+                <span className='apodDate'><h2>{apodData.date}</h2></span>
             </div>
             <div className='apodImg'>
                  <a href={apodData.hdurl}>

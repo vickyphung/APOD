@@ -36,11 +36,10 @@ function ApodHome(props) {
   return (
 
     <div id="apodSection" className='apodContainer'>
-      <div className='apodNasaHeader'>TODAY</div>
       
       <div className='apodContent'>
-        <div className='apodTitle'>{apod.title}<br></br>
-        <span className='apodDate'>{apod.date}</span></div>
+        <div className='apodTitle'><h1>{apod.title}</h1><br></br>
+        <span className='apodDate'><h2>{apod.date}</h2></span></div>
         <div className='apodImg'>
           <a href={apod.hdurl}>
             <img src={apod.url} 
@@ -53,8 +52,8 @@ function ApodHome(props) {
         </div>
         <div className='apodDetails'>
           <div>
-          <button className='apodBtn' onClick={()=>{setReadMore(!readMore)}}>Details</button>
-            <p className='apodExplanation'>{readMore && apod.explanation} </p>
+          <h2>Details</h2>
+            <p className='apodExplanation'>{apod.explanation} </p>
           </div>
         </div>
 

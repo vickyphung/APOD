@@ -35,10 +35,9 @@ function DateInput(props) {
     </div>
     <div className='formInput'>
         <form name="date-input" onSubmit={handleSubmit}>
-          {/* <label> */}
-            {/* date: */}
+  
             <input className="dateInput" type="date" defaultValue={defaultValue} onChange={handleChange} />
-          {/* </label> */}
+  
           <input className="dateSubmit" type="submit" value="Submit" />
         </form>
     </div>

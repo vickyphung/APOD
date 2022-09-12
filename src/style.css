@@ -1,3 +1,8 @@
+* {
+    overflow-x: hidden;
+    
+}
+
 .apodContainer {
     display: flex;
     flex-direction: column;
@@ -37,10 +42,14 @@
     margin: 1rem;
     }
 
+h1 {
+    font-size: 3rem;
+}
 .apodDate{
     font-size: 2.4vw;
  
 }
+
 .apodImg {
     max-width: 100%;
     border-radius: .65em;
@@ -57,37 +66,29 @@
     text-align: left;
 }
 
-.apodTitle{
-    font-size: 3.5vw;
-    margin: 1%;
-    text-align: left;
-    padding: 2%;
-}
+
 .apodExplanation {
-    font-size: 1.5vw;
     text-align: left;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 1em;
     font-style: italic;
     line-height: 1.85;
-    background-color: #ffebf9;
-    margin-top: 2%;
     border-radius: .5em;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .apodBtn {
-    background-color: #ffebf9;
+    background-color: rgb(119, 77, 233);
     padding: 1%;
     border-radius: .5em;
     letter-spacing: 1px;
     font-size: 1.25vw;
     border: pink;
     margin-left: 10%;
+    color: white;
 }
+.pickDateContainer {
+margin: 1em;
 
+}
 .randomContainer {
     display: flex;
     flex-direction: column;
@@ -100,15 +101,17 @@
 
 .randomItem {
     width: 40%;
-    display: inline-block;
+    display: flex;
     border: 8px solid rgb(119, 77, 233);
     border-radius: .8em;
     padding: 2%;
     display: inline-flex;
     flex-direction: column;
-    min-height: 500px;
+ height: 500px;
     margin: .5%;
-    background-color: rgb(136, 102, 230);
+    background-color: rgb(111, 75, 207);
+    align-items: center;
+  
 
 }
 
@@ -117,9 +120,12 @@
     padding: 1rem;
     border-radius: .5em;
     color: white;
-    background-color: rgb(174, 149, 243);
+    background-color: rgb(127, 96, 212);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .35px;
+    overflow-y: hidden;
+
+
 }
 
 
@@ -145,6 +151,9 @@
     background-color: black;
     border-radius: .5em;
     padding: 1rem;
+
+    overflow-y: hidden;
+
 }
 
 .randomHeader{
@@ -156,31 +165,35 @@
     text-align: left;
     border-radius: .5em;
     padding: 2rem;
-    color: white;
+    /* color: white; */
     font-weight: bold;
 }
 
 .pickDate {
     display: flex;
     align-items: center;
-    background-color: rgb(36, 196, 196);
+    /* background-color: #009896; */
+    width: 700px;
+    overflow-y: hidden;
     border-radius: .5em;
-    height: 9vh;
-    margin: 1rem;
+    /* width: 400px; */
+    height: 160px;
+    justify-content: center;
+
 }
 
 .dateSubmit {
-    background-color: rgb(136, 102, 230);
+    background-color: white;
     padding: .4em;
     border-radius: .5em;
     font-size: 2.35vw;
-    color:rgb(254, 255, 255);
-    border: 3px solid rgb(144, 103, 221);
+    /* color:rgb(254, 255, 255); */
 
 }
 
 .dateSubmit:hover {
-    background-color: rgb(199, 157, 233);
+    background-color: rgb(111, 75, 207);
+    color: white;
  
 }
 
@@ -210,9 +223,7 @@
 }
 
 
-.dateContainer {
-    margin-bottom: 5%;
-}
+
 
 
 .navApodLinks{
