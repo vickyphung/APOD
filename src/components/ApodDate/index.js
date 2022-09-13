@@ -26,16 +26,18 @@ const ApodDate = (props) => {
                 <span className='apodDate'><h2>{apodData.date}</h2></span>
             </div>
             <div className='apodImg'>
-                 <a href={apodData.hdurl}>
+                <a href={apodData.hdurl}>
                     <img src={apodData.url} 
                         className='apodImg'
                         width="auto" 
                     />
                 </a>
             </div>
-            <div className='apodExplanation'>
-                {apodData.explanation}
-            </div>
+        <div className='apodDetails'>
+            <p className='apodExplanation'>
+                {apodData.explanation} 
+            </p>
+        </div>
         </div>
     )
 }

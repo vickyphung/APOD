@@ -51,10 +51,10 @@ function ApodHome(props) {
           </a>
         </div>
         <div className='apodDetails'>
-          <div>
+        
           <h2>Details</h2>
             <p className='apodExplanation'>{apod.explanation} </p>
-          </div>
+      
         </div>
 
 
