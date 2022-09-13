@@ -25,13 +25,13 @@ console.log(movies)
 
   return (
     <div id="ran" className="randomContainer">
-      <div className="randomContent">
+
       <ul className="randomUL">
         {movies.map((movie, date) => (
           <div key={date} className="randomItem">
-            <div>
-              <p className="randomItemTitle">{movie.title}</p> </div>
-              <p className="randomItemDate">{movie.date}</p>
+              <h2>{movie.title} </h2>
+              <p>{movie.date}</p>
+    
           <div>
             <a href={movie.hdurl}>
               <img src={movie.url} 
@@ -46,7 +46,8 @@ console.log(movies)
         )
         )}
       </ul>
-      </div>
+   
+
     </div>
   );
 }

@@ -1,10 +1,9 @@
 nav {
     display: flex;
-    justify-content: left;
     flex-direction: column;
-    align-items: center;
-border: 1px solid rgb(111, 75, 207);
-padding: 1em;
+    border: 1px solid rgb(111, 75, 207);
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 .navTitle {
@@ -13,9 +12,9 @@ font-size: 1.25rem;
 }
 
 .navLinks {
-font-size: 2.25vw;
+font-size: 1.5rem;
 text-decoration: none;
-border: none;
+/* border: 1px solid orange; */
 
 }
 

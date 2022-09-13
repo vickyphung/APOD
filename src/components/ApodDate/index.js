@@ -22,7 +22,7 @@ const ApodDate = (props) => {
 
     return (
         <div className="pickDateContainer">
-            <div className='apodTitle'><h1>{apodData.title}</h1><br></br>
+            <div className='apodTitle'><h1>{apodData.title}</h1>
                 <span className='apodDate'><h2>{apodData.date}</h2></span>
             </div>
             <div className='apodImg'>

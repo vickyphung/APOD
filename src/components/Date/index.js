@@ -10,8 +10,8 @@ function Test () {
     }
     return (
         <div>
-          <div><DateInput setApodDate={setTestDateAndLink} /></div>
-          <div><ApodDate testDate={testDate}/></div>
+          <DateInput setApodDate={setTestDateAndLink} />
+          <ApodDate testDate={testDate}/>
         </div>
     )
 }

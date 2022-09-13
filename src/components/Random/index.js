@@ -12,7 +12,7 @@ function Random () {
     }
    
     return (
-        <div>
+        <div className='random'>
             <div><RandomBtn setRandom={setRandomButtoneAndLink}/></div>
             <div><ApodRandom randomButton={randomButton}/></div>
         </div>

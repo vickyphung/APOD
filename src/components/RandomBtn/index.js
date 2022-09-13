@@ -24,7 +24,7 @@ function RandomBtn(props) {
     }
 
   return (
-    <div className='pickDate'>
+    <div className='random'>
     <div className='apodDateHeader'>  
       <p className='apodDateHeadTitle'>RANDOM # OF POSTS</p>
     </div>

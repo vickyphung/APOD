@@ -1,192 +1,93 @@
 * {
     overflow-x: hidden;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .apodContainer {
     display: flex;
     flex-direction: column;
-    padding: 1px;
     height: auto;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em;
+    margin-top: 1em;
+    
 }
 
 .apodContent {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
-
-.nasaHeader{
-    font-size: 4vw;
-    padding: 1.75%;
-    margin: 1rem;
-    border-radius: .5em;
-    font-weight: bold;
-    height: 9vh;
-    color: rgb(36, 196, 196);
-    text-align: left;
-    margin-left: -5rem;
-}
-
-.apodNasaHeader {
-    font-size: 3vw;
-    text-align: left;
-    border-radius: .25em;
-    padding: 1.7%;
-    background-color: rgb(36, 196, 196);
-    color: white;
-    font-weight: bold;
-    height: 5vh;
-    margin: 1rem;
-    }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
 }
 .apodDate{
-    font-size: 2.4vw;
+    font-size: 1.5em;
  
 }
 
 .apodImg {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: .65em;
     height: auto;
     max-height: 100vh;
-    text-align: center;
 }
 
 .apodDetails{
-    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 2%;
     text-align: left;
 }
 
 
 .apodExplanation {
     text-align: left;
-    padding: 1em;
+    padding: 2em;
+    margin: 3em;
     font-style: italic;
     line-height: 1.85;
     border-radius: .5em;
 }
 
-.apodBtn {
-    background-color: rgb(119, 77, 233);
-    padding: 1%;
-    border-radius: .5em;
-    letter-spacing: 1px;
-    font-size: 1.25vw;
-    border: pink;
-    margin-left: 10%;
-    color: white;
-}
-.pickDateContainer {
-margin: 1em;
-
-}
-.randomContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem;
-    flex-wrap: wrap;    
-
-}
 
 
-.randomItem {
-    width: 40%;
-    display: flex;
-    border: 8px solid rgb(119, 77, 233);
-    border-radius: .8em;
-    padding: 2%;
-    display: inline-flex;
-    flex-direction: column;
- height: 500px;
-    margin: .5%;
-    background-color: rgb(111, 75, 207);
-    align-items: center;
-  
 
-}
-
-.randomItemTitle {
-    font-size: 2.4vw;
-    padding: 1rem;
-    border-radius: .5em;
-    color: white;
-    background-color: rgb(127, 96, 212);
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: .35px;
-    overflow-y: hidden;
-
-
-}
-
-
-@media only screen and (max-width: 600px) {
-    .randomItem {
-      display: block;
-      width: 100%;
-      min-height: 250px;
-    }
-  }
-
-.randomItemDate {
-    font-size: 2vw;
-    margin-left: 1.5rem;
-    color:rgb(221, 215, 240);
-    font-weight: 500;
-}
-.randomImg {
-    width: 55%;
-    height: auto;
-    text-align: center;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: .5em;
-    padding: 1rem;
-
-    overflow-y: hidden;
-
-}
-
-.randomHeader{
-    margin: 1rem;
-}
 .apodDateHeader{
  
-    font-size: 3vw;
+    font-size: 1.75rem;
     text-align: left;
     border-radius: .5em;
-    padding: 2rem;
     /* color: white; */
     font-weight: bold;
+    
 }
 
-.pickDate {
-    display: flex;
-    align-items: center;
-    /* background-color: #009896; */
-    width: 700px;
-    overflow-y: hidden;
-    border-radius: .5em;
-    /* width: 400px; */
-    height: 160px;
-    justify-content: center;
+.border {
+/* border: 1px solid orange; */
+margin-bottom: -5em;
+overflow-y: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 1em;
+}
 
+.pickDateContainer {
+    margin-top: -8em;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .dateSubmit {
     background-color: white;
     padding: .4em;
     border-radius: .5em;
-    font-size: 2.35vw;
+    font-size: 1.5rem;
     /* color:rgb(254, 255, 255); */
 
 }
@@ -201,31 +102,64 @@ margin: 1em;
     background-color: white;
     padding: .4em;
     border-radius: .5em;
-    font-size: 2.35vw;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     font-weight: 600;
-    margin-left: 2em;
-    margin-right: 1em;
 }
 
+.randomContainer, .random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
 
+.randomItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    border: 3px solid rgb(119, 77, 233);
+    border-radius: 10px;
+    background-color: rgb(111, 75, 207);
+    width: 400px;
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    font-family: Helvetica;
+}
+
+.randomItemTitle{
+    background-color: rgb(111, 75, 207);
+    padding: 1em;
+    color: white;
+
+}
 
 .randomInput {
     background-color: white;
     padding: .4em;
     border-radius: .5em;
-    font-size: 2.35vw;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 70px;
-    margin-right: 1em;
- 
+
+}
+
+
+.randomImg {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: .5em;
+    padding: 1rem;
+    overflow-y: hidden;
 }
 
 
 
-
-
-.navApodLinks{
-    margin-right: 2em;
-}
