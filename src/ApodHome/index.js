@@ -10,7 +10,7 @@ function ApodHome(props) {
   const [apod, setApod] = useState({});
 
   //Variable for function to show and hide APOD details
-  const [readMore, setReadMore]=useState(false);
+  // const [readMore, setReadMore]=useState(false);
 
   //useEffect hook fetches data after render
   //similar to react class lifecycle methods
@@ -52,7 +52,7 @@ function ApodHome(props) {
         </div>
         <div className='apodDetails'>
         
-          <h2>Details</h2>
+        
             <p className='apodExplanation'>{apod.explanation} </p>
       
         </div>

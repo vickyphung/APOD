@@ -7,9 +7,9 @@ export default function Nav() {
        
               <div className="navLinks">
                   <li className="navLinkContainer">
-                  <CustomLink  to="/" className="navLinkItems">Today</CustomLink>
-                  <CustomLink  to="/date" className="navLinkItems">Date</CustomLink>
-                  <CustomLink  to="/random" className="navLinkItems">Random</CustomLink>
+                  <CustomLink  to="/" className="navLinkItems">Today's APOD</CustomLink>
+                  <CustomLink  to="/date" className="navLinkItems">APOD by Date</CustomLink>
+                  <CustomLink  to="/random" className="navLinkItems">Choose a random # of APODs</CustomLink>
                   </li>
               </div>
               <div className="navTitle">Astronomy Picture of the Day</div>
