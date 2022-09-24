@@ -26,7 +26,7 @@ function RandomBtn(props) {
   return (
     <div className='random'>
     <div className='apodDateHeader'>  
-      <p className='apodDateHeadTitle'>RANDOM # OF POSTS</p>
+      <p className='apodDateTitle'>RANDOM # OF POSTS</p>
     </div>
     <div className='formInput'>
         <form name="date-input" onSubmit={handleSubmit}>

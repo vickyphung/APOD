@@ -1,6 +1,6 @@
 .AppContainer {
   width: 100vw;
-  display: flex;
+  height: 100vh;
   flex-direction: column;
   margin: 0em;
   background-color: #ffc864

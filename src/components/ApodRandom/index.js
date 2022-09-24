@@ -29,8 +29,8 @@ console.log(movies)
       <ul className="randomUL">
         {movies.map((movie, date) => (
           <div key={date} className="randomItem">
-              <h2>{movie.title} </h2>
-              <p>{movie.date}</p>
+              <h2><span className="dateTitle">{movie.title}</span> </h2>
+              <p className="ranDate">{movie.date}</p>
     
           <div>
             <a href={movie.hdurl}>
