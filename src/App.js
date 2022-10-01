@@ -8,16 +8,12 @@ import Date from "./components/Date";
 function App() {
   return (    
       <div className="AppContainer">
-        <div className="">
           <ApodNav />
-        </div>
-        <div>
           <Routes>
             <Route path="/" element={<ApodHome />} />
             <Route path="/random" element={<Random />} />
             <Route path="/date" element={<Date />} />
           </Routes>
-        </div>
       </div>
   );
 }

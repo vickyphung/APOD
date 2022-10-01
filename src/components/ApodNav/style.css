@@ -2,32 +2,33 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    margin-bottom: 1em;
-}
-
-.navTitle {
-font-weight: bold;
-font-size: 1.25rem;
-color: #191414;
-}
-
-.navLinks {
-text-decoration: none;
-/* border: 1px solid orange; */
-
-}
-
-.navLinkItems{
-list-style-type: none;
-display: inline-flex;
-padding: 1rem;
-text-decoration: none;
-color: #6e6d6d;
-margin: 1rem;
-border-radius: 5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .navLinkContainer {
     display: inline-flex;
 }
+
+.navTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #191414;
+    text-align: center;
+    padding: 1em;
+    border: 1px soild #503750;
+    background-color: #fada9f;
+    border-radius: 2em;
+}
+
+.navLinkItems{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 1rem;
+    text-decoration: none;
+    color: #444141;
+    border-radius: 5em;
+}
+
 

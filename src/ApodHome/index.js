@@ -33,14 +33,15 @@ function ApodHome(props) {
   }, [])
 
 
-  return (
-
-    <div id="apodSection" className='apodContainer'>
-      
+  return (      
       <div className='apodContent'>
-        <div className='apodTitle'><h1>{apod.title}</h1><br></br>
-        <span className='apodDate'><h2>{apod.date}</h2></span></div>
-        <div className='apodImg'>
+    
+        <div className='apodTitle'>
+          <h1>{apod.title}</h1>
+          <span className='apodDate'><h2>{apod.date}</h2></span>
+        </div>
+
+        <div className='apodImage'>
           <a href={apod.hdurl}>
             <img src={apod.url} 
             alt="NASA Astronomy Pic of the Day"
@@ -50,15 +51,11 @@ function ApodHome(props) {
             />
           </a>
         </div>
+
         <div className='apodDetails'>
-        
-        
             <p className='apodExplanation'>{apod.explanation} </p>
-      
         </div>
 
-
-    </div>
   </div>  
   )
 };

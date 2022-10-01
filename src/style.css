@@ -1,59 +1,52 @@
 * {
     overflow-x: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.apodContainer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin-top: 1em;
 }
 
 .apodContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
-h1 {
-    font-size: 3em;
-}
+
 .apodTitle {
     color: #191414;
-}
+    font-size: 1.5em;}
 .apodDate{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
-.apodImg {
-    max-width: 90%;
-    border-radius: .65em;
+.apodImage {
+    max-width: 80%;
     height: auto;
     max-height: 100vh;
-    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
 }
 
-.apodDetails{
-    padding: 1em;
-    margin: 1em;
 
+.apodDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .apodExplanation {
-    text-align: left;
+    text-align: center;
     font-style: italic;
     line-height: 1.85;
-    padding-right: 3em;
     width: 70%;
 }
 
 .apodDateHeader{
     font-size: 1.75rem;
     font-weight: bold;
-    
 }
 .apodDateTitle {
     color: #191414;
