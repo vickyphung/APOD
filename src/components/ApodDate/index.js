@@ -30,6 +30,7 @@ const ApodDate = (props) => {
                     <img src={apodData.url} 
                         className='apodImg'
                         width="auto"
+                        alt=""
                     />
                 </a>
             </div>

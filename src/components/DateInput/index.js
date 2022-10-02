@@ -28,9 +28,9 @@ function DateInput(props) {
   };
 
   return (
-    <div className="border">
+    <div className="date">
     
-        <div className="apodDateHeader">PICK A DAY</div>
+        <h1><span className="apodDateHeader">PICK A DAY</span></h1>
 
        
         <form name="date-input" onSubmit={handleSubmit}>
@@ -46,9 +46,9 @@ function DateInput(props) {
     
     
 
-      <div>
+ 
         <ApodDate />
-      </div>
+  
     </div>
   );
 }
