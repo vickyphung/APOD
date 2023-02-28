@@ -24,7 +24,7 @@ function ApodHome(props) {
   useEffect(() => {
     const fetchData = async () => {
       let response = await axios.get(
-        `https://api.nasa.gov/planetary/apod?api_key=$3BKr5C5pPpUpjvBxyMy6VaF0SKS6S2BC8m8CTol1`
+        `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`
       );
       setApod(response.data);
       console.log(response.data)
